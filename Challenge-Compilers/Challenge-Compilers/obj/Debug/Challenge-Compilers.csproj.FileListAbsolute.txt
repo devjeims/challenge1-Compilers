@@ -1,0 +1,10 @@
+C:\Users\CADesarrollo\source\repos\Challenge-Compilers\Challenge-Compilers\bin\Debug\Challenge-Compilers.exe.config
+C:\Users\CADesarrollo\source\repos\Challenge-Compilers\Challenge-Compilers\bin\Debug\Challenge-Compilers.exe
+C:\Users\CADesarrollo\source\repos\Challenge-Compilers\Challenge-Compilers\bin\Debug\Challenge-Compilers.pdb
+C:\Users\CADesarrollo\source\repos\Challenge-Compilers\Challenge-Compilers\obj\Debug\Challenge-Compilers.csprojAssemblyReference.cache
+C:\Users\CADesarrollo\source\repos\Challenge-Compilers\Challenge-Compilers\obj\Debug\Challenge_Compilers.formCompiler.resources
+C:\Users\CADesarrollo\source\repos\Challenge-Compilers\Challenge-Compilers\obj\Debug\Challenge_Compilers.Properties.Resources.resources
+C:\Users\CADesarrollo\source\repos\Challenge-Compilers\Challenge-Compilers\obj\Debug\Challenge-Compilers.csproj.GenerateResource.cache
+C:\Users\CADesarrollo\source\repos\Challenge-Compilers\Challenge-Compilers\obj\Debug\Challenge-Compilers.csproj.CoreCompileInputs.cache
+C:\Users\CADesarrollo\source\repos\Challenge-Compilers\Challenge-Compilers\obj\Debug\Challenge-Compilers.exe
+C:\Users\CADesarrollo\source\repos\Challenge-Compilers\Challenge-Compilers\obj\Debug\Challenge-Compilers.pdb
