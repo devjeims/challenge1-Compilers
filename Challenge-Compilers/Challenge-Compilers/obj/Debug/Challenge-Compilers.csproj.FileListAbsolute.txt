@@ -8,3 +8,12 @@ C:\Users\CADesarrollo\source\repos\Challenge-Compilers\Challenge-Compilers\obj\D
 C:\Users\CADesarrollo\source\repos\Challenge-Compilers\Challenge-Compilers\obj\Debug\Challenge-Compilers.csproj.CoreCompileInputs.cache
 C:\Users\CADesarrollo\source\repos\Challenge-Compilers\Challenge-Compilers\obj\Debug\Challenge-Compilers.exe
 C:\Users\CADesarrollo\source\repos\Challenge-Compilers\Challenge-Compilers\obj\Debug\Challenge-Compilers.pdb
+D:\Programacion U\challenge1-Compilers\Challenge-Compilers\Challenge-Compilers\bin\Debug\Challenge-Compilers.exe.config
+D:\Programacion U\challenge1-Compilers\Challenge-Compilers\Challenge-Compilers\bin\Debug\Challenge-Compilers.exe
+D:\Programacion U\challenge1-Compilers\Challenge-Compilers\Challenge-Compilers\bin\Debug\Challenge-Compilers.pdb
+D:\Programacion U\challenge1-Compilers\Challenge-Compilers\Challenge-Compilers\obj\Debug\Challenge-Compilers.csprojAssemblyReference.cache
+D:\Programacion U\challenge1-Compilers\Challenge-Compilers\Challenge-Compilers\obj\Debug\Challenge_Compilers.formCompiler.resources
+D:\Programacion U\challenge1-Compilers\Challenge-Compilers\Challenge-Compilers\obj\Debug\Challenge_Compilers.Properties.Resources.resources
+D:\Programacion U\challenge1-Compilers\Challenge-Compilers\Challenge-Compilers\obj\Debug\Challenge-Compilers.csproj.GenerateResource.cache
+D:\Programacion U\challenge1-Compilers\Challenge-Compilers\Challenge-Compilers\obj\Debug\Challenge-Compilers.exe
+D:\Programacion U\challenge1-Compilers\Challenge-Compilers\Challenge-Compilers\obj\Debug\Challenge-Compilers.pdb

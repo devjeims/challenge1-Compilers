@@ -13,6 +13,7 @@ namespace Challenge_Compilers
 {
     public partial class formCompiler : Form
     {
+        
         public formCompiler()
         {
             InitializeComponent();
@@ -25,7 +26,7 @@ namespace Challenge_Compilers
 
         private void formCompiler_Load(object sender, EventArgs e)
         {
-           
+
         }
 
         private void rdArchive_CheckedChanged(object sender, EventArgs e)
@@ -34,9 +35,11 @@ namespace Challenge_Compilers
             {
                 btnOpenArchive.Visible = true;
                 lblRouteArchive.Visible = true;
+                txtSalida.Visible = true;
             }
             else
             {
+                lblRouteArchive.Text = "";
                 btnOpenArchive.Visible = false;
                 lblRouteArchive.Visible = false;
             }
@@ -48,6 +51,7 @@ namespace Challenge_Compilers
             {
                 btnSendInput.Visible = true;
                 txtInput.Visible = true;
+                txtSalida.Visible = true;
             }
             else
             {
@@ -58,14 +62,24 @@ namespace Challenge_Compilers
 
         private void btnOpenArchive_Click(object sender, EventArgs e)
         {
-            if (openFileDialog1.ShowDialog() == DialogResult.OK) {
-                lblRouteArchive.Text += openFileDialog1.FileName.ToLower() + "\n";
-                string[] lines = System.IO.File.ReadAllLines(@openFileDialog1.FileName);
-                for (int i = 0; i < lines.Length; i++) {
-                    lblOutput.Text += ((i + 1) + "-> " + lines[i] + "\n");
+            try
+            {
+                if (openFileDialog1.ShowDialog() == DialogResult.OK)
+                {
+                    lblRouteArchive.Text = openFileDialog1.FileName.ToLower() + "\n";
+                    string[] lines = System.IO.File.ReadAllLines(@openFileDialog1.FileName);
+                    txtSalida.Text += openFileDialog1.SafeFileName.ToLower() + "\r\n";
+                    for (int i = 0; i < lines.Length; i++)
+                    {
+                        txtSalida.Text += ((i + 1) + "-> " + lines[i] + "\r\n");
+                    }
+                    lblRouteArchive.Visible = true;
+                    labelOutput.Visible = true;
+                    txtSalida.Visible = true;
                 }
-                lblRouteArchive.Visible = true;
-                labelOutput.Visible = true;
+            }
+            catch (Exception ex) {
+                MessageBox.Show("Farid el mejor");
             }
         }
 
@@ -74,24 +88,35 @@ namespace Challenge_Compilers
 
         }
 
+        private String archiveName() {
+
+            return null;
+        }
         private void btnSendInput_Click(object sender, EventArgs e)
         {
-            string aLine;
-            Boolean aParagraph = true;
-            int lineNumber = 1;
-            StringReader strReader = new StringReader(txtInput.Text);
-            while (aParagraph)
+            try
             {
-                aLine = strReader.ReadLine();
-                if (aLine != null) {
-                    lblOutput.Text += lineNumber + "-> " +  aLine + "\n";
-                    labelOutput.Visible = true;
-                    lineNumber++;
+                string aLine;
+                int lineNumber = 1;
+                StringReader strReader = new StringReader(txtInput.Text);
+                while (true)
+                {
+                    aLine = strReader.ReadLine();
+                    if (aLine != null)
+                    {
+                        txtSalida.Text += lineNumber + "-> " + aLine + "\r\n";
+                        labelOutput.Visible = true;
+                        txtSalida.Visible = true;
+                        lineNumber++;
+                    }
+                    else
+                    {
+                        break;
+                    }
                 }
-                else {
-                    MessageBox.Show("Debes escribir algo en el campo de texto.");
-                    aParagraph = false;
-                }
+            }
+            catch (Exception ex) {
+                MessageBox.Show("Farid el mejor");
             }
         }
 
@@ -104,5 +129,17 @@ namespace Challenge_Compilers
         {
 
         }
+
+        private void txtInput_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSalida_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
+
+
 }
